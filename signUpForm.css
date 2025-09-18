@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    line-height: 1.4;  
+}
+
+html,
+body {
+    background-color: lightgray;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    height: 100%;
+}
+
+.container{
+    background-color: rgba(28, 133, 151, 0.8);
+    display: flex;
+    margin: 0px auto;
+    width: 940px; 
+    height: 660px;
+}
+.left{
+    background: url("./images/ocean3.png");
+    width: 340px;
+    height: 660px;
+    margin: 0 auto;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 340px;
+    height: 100px;
+    background-color: rgba(4, 85, 117, 0.5);    /*sondaki a= 0.5 arka plan opasitesini ayarliyor. Direk opacity attribute kullaninca, ondeki logo da transparanlasiyor*/
+    margin-top: 140px;
+}
+
+img{
+    height: 95px;
+    width: 95px;
+}
+
+.brand{
+    color: white;
+    font-size: 42px;  
+}
+
+.photoCredit{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    margin: 390px auto;  
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    width: 600px; 
+    height: 660px;
+}
+
+.top{
+    min-height: 240px;
+    padding: 100px 30px 40px 30px;
+    text-align: left;
+    color: whitesmoke;
+    /*color: rgb(179, 232, 235);*/
+}
+
+.middle{
+    min-height: 200px;
+    background-color: rgb(148, 217, 219);
+    padding: 15px 30px;
+}
+
+.slogan{
+    color: rgb(28, 133, 151);  
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info{
+    font-size: 11px;
+}
+
+form {
+    width: 440px; 
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px  
+}
+
+form > p {
+    display: flex;
+    flex-direction: column;
+}
+
+label span {
+    display: inline-block;
+    text-align: right;
+    font-size: 10px;
+  }
+
+input {
+    background-color:whitesmoke;
+}
+  
+input:focus {
+    border: #E5E7EB;
+
+}
+
+#pwd:invalid{
+    border: red;
+}
+  
+
+.bottom{
+    min-height: 220px;
+    padding: 25px 30px 15px 30px;
+}
+
+button{
+    background-color:whitesmoke;
+    color: rgb(34, 107, 107);
+    border:none;
+    /*margin: 0 0 0 15px;*/
+    border-radius: 5px;
+    padding: 4px 15px 4px 15px;
+    width: 120px;
+    font-size: 12px;
+}
+
+
+button:hover{
+    background-color: rgb(243, 5, 144);
+    color:white;
+}
+
+button:active{
+    /*box-shadow: none;*/
+    transform: translate(-3px, 3px);
+    
+}
+
+.bottom > p {
+    font-size: 13px;  
+    padding: 15px 0px;
+}
+a {
+    color: rgb(152, 215, 218);
+    text-decoration: none;   
+    font-size: 13px;
+}
+
+.designCredit{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    margin: 90px auto; 
+    
+}
+
+
+
+
