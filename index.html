@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Sign-Up Form</title>
+        <link rel="stylesheet" href="signUpForm.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <div class="left">
+            <div class="name">
+                <img id="logo" src="./images/OceanTribeLogo.png" width="80" height="80" alt="The Ocean Tribe Logo">
+                <div class="brand">Water Tribe</div>
+            </div>
+            <div class="photoCredit">
+                <p>Photo by github.com/nillynill using Microsoft Designer AI</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="top">
+                <p> Hey water lovers! The Water Tribe is the new hub for people who love and make efforts to protect the waters of the earth clean and free for the use of all living beings. Water is the unique feature of our planet in the known space.</p>
+                    <br>
+                    <p>Sign up to learn more about our activities!</p>
+            </div>
+            <div class="middle">
+                <p class="slogan">Let's do this!</p>
+                <p class="info"> Required fields are followed by <strong><span aria-label="required">*</span></strong></p>
+                <form> 
+                    <p>
+                        <label for="firstName">
+                            <span>FIRST NAME</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="firstName" name="userFirstName" required />
+                    </p>
+
+                    <p>
+                        <label for="lastName">
+                            <span>LAST NAME</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="lastName" name="userLastName" required />
+                    </p>
+
+                    <p>
+                        <label for="mail">
+                            <span>EMAIL</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="email" id="mail" name="userMail" required />
+                    </p> 
+
+                    <p>
+                        <label for="phone">
+                            <span>PHONE</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="tel" id="phone" name="userPhone" required />
+                    </p>
+                    
+                    <p>
+                        <label for="pwd">
+                            <span>PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="password" id="pwd" name="password" required />
+                    </p>
+
+                    <p>
+                        <label for="pwd">
+                            <span>CONFIRM PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="password" id="pwd" name="password" required />
+                      </p>                   
+                </form>
+                
+            </div>
+            <div class="bottom">
+                <button>Create Account</button>
+                <p>Already have an account?&nbsp;&nbsp;<a href="" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                <div class="designCredit">
+                    <p>Coding & Content Creation Nillynill 2025 <a href="https://github.com/nillynill" target="_blank">&nbsp;@github</a>&nbsp;for&nbsp;<a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank">The Odin Project</a></p>
+                </div>                
+            </div>              
+        </div>
+      </div>
+    </body>
+</html>
