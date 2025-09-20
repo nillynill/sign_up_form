@@ -24,6 +24,7 @@ body {
     width: 940px; 
     height: 660px;
 }
+
 .left{
     background: url("./images/ocean3.png");
     width: 340px;
@@ -69,14 +70,13 @@ img{
 
 .top{
     min-height: 240px;
-    padding: 100px 30px 40px 30px;
+    padding: 65px 30px 40px 30px;
     text-align: left;
     color: whitesmoke;
-    /*color: rgb(179, 232, 235);*/
 }
 
 .middle{
-    min-height: 200px;
+    min-height: 210px;
     background-color: rgb(148, 217, 219);
     padding: 15px 30px;
 }
@@ -92,7 +92,7 @@ img{
 }
 
 form {
-    width: 440px; 
+    width: 620px; 
     display: flex;
     flex-wrap: wrap;
     column-gap: 70px  
@@ -103,58 +103,90 @@ form > p {
     flex-direction: column;
 }
 
+label{
+  color:white;
+}
+
 label span {
     display: inline-block;
     text-align: right;
-    font-size: 10px;
-  }
+    font-size: 11px;
+}
 
-input {
+input::placeholder {
+  color:rgb(187, 180, 180);
+}
+
+input,
+input:active,
+input[type="text"]:empty {
     background-color:whitesmoke;
+    border-color: whitesmoke;
+    color:rgb(11, 113, 131);
+    width: 210px;
+    height: 22px;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 14px;
 }
-  
-input:focus {
-    border: #E5E7EB;
 
+input:hover,
+input:focus {  
+    outline-style: solid;
+    outline-color:rgb(28, 133, 151); 
+    box-shadow: 0 0 7px 7px rgb(68, 173, 192);
 }
 
-#pwd:invalid{
-    border: red;
+input:invalid{
+  border: 2px solid red;
 }
-  
+
+input[type='text']:user-invalid{
+  border: 2px solid red;
+}
+
+input[type='text']:user-valid{
+  border: 2px solid rgb(6, 177, 6);
+}
+
+input[type='password']:invalid{
+  border: 2px solid red;
+}
+
+input[type='password']:valid{
+  border: 2px solid rgb(6, 177, 6);
+}
 
 .bottom{
-    min-height: 220px;
+    min-height: 210px;
     padding: 25px 30px 15px 30px;
 }
 
 button{
-    background-color:whitesmoke;
+  background-color:whitesmoke;
     color: rgb(34, 107, 107);
-    border:none;
-    /*margin: 0 0 0 15px;*/
     border-radius: 5px;
     padding: 4px 15px 4px 15px;
     width: 120px;
     font-size: 12px;
+    cursor: pointer;
 }
 
-
-button:hover{
-    background-color: rgb(243, 5, 144);
+button:hover,
+button:focus {
+    background-color: rgb(148, 217, 219);
     color:white;
 }
 
 button:active{
-    /*box-shadow: none;*/
     transform: translate(-3px, 3px);
-    
 }
 
 .bottom > p {
     font-size: 13px;  
-    padding: 15px 0px;
+    padding: 10px 2px;
 }
+
 a {
     color: rgb(152, 215, 218);
     text-decoration: none;   
@@ -165,7 +197,7 @@ a {
     text-align: center;
     color: white;
     font-size: 11px;
-    margin: 90px auto; 
+    margin: 80px auto; 
     
 }
 
