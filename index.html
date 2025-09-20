@@ -21,7 +21,7 @@
 
         <div class="right">
             <div class="top">
-                <p> Hey water lovers! The Water Tribe is the new hub for people who love and make efforts to protect the waters of the earth clean and free for the use of all living beings. Water is the unique feature of our planet in the known space.</p>
+                <p>The Water Tribe is a vibrant community dedicated to cherishing and safeguarding Earth's waters, ensuring they remain clean and accessible for all living beings. As passionate stewards of this unique and precious resource—found nowhere else in the known universe—we unite to protect our planet’s lifeblood with unwavering commitment.</p>
                     <br>
                     <p>Sign up to learn more about our activities!</p>
             </div>
@@ -34,7 +34,7 @@
                             <span>FIRST NAME</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="firstName" name="userFirstName" required />
+                        <input type="text" id="firstName" name="userFirstName" placeholder="your name" pattern="[A-Za-z ]{1,30}" size="30" minlength="1" maxlength="30" required />
                     </p>
 
                     <p>
@@ -42,7 +42,7 @@
                             <span>LAST NAME</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="lastName" name="userLastName" required />
+                        <input type="text" id="lastName" name="userLastName" placeholder="your last name" pattern="[A-Za-z ]{1,30}" size="30" minlength="1" maxlength="30" required />
                     </p>
 
                     <p>
@@ -50,15 +50,14 @@
                             <span>EMAIL</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="email" id="mail" name="userMail" required />
+                        <input type="email" id="mail" name="userMail" placeholder="you@example.com" />
                     </p> 
 
                     <p>
                         <label for="phone">
                             <span>PHONE</span>
-                            <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="tel" id="phone" name="userPhone" required />
+                        <input type="tel" id="phone" name="userPhone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter a valid phone number, example: 888 888 8888" />
                     </p>
                     
                     <p>
@@ -66,7 +65,7 @@
                             <span>PASSWORD</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="password" id="pwd" name="password" required />
+                        <input type="password" id="pwd" name="password" placeholder="Any 6 digits, example 235689" pattern="^[0-9]{6}$"  required />
                     </p>
 
                     <p>
@@ -74,13 +73,13 @@
                             <span>CONFIRM PASSWORD</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="password" id="pwd" name="password" required />
+                        <input type="password" id="pwd" name="password" placeholder="Any 6 digits, example 235689" pattern="^[0-9]{6}$"  required />
                       </p>                   
                 </form>
                 
             </div>
             <div class="bottom">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <p>Already have an account?&nbsp;&nbsp;<a href="" target="_blank" rel="noopener noreferrer">Log in</a></p>
                 <div class="designCredit">
                     <p>Coding & Content Creation Nillynill 2025 <a href="https://github.com/nillynill" target="_blank">&nbsp;@github</a>&nbsp;for&nbsp;<a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank">The Odin Project</a></p>
